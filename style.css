@@ -1,0 +1,323 @@
+/*
+ Theme Name:     Robert DeVore
+ Theme URI:      http://www.robertdevore.com
+ Description:    Twentysixteen Child theme
+ Author:         Robert DeVore
+ Author URI:     http://www.robertdevore.com/
+ Template:       twentysixteen
+ Version:        1.0.0
+*/
+
+body {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+strong {
+	font-weight: 700;
+}
+
+a:active,
+a:focus {
+	outline: none;
+}
+
+h1, h2, h3,
+.site-title,
+.entry-title {
+	font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+	letter-spacing: 1px;
+}
+
+code {
+    background-color: rgba( 255,0,0, 0.1);
+}
+
+body.admin-bar:not(.custom-background-image)::before {
+    top: 0;
+}
+
+body:not(.custom-background-image)::before, body:not(.custom-background-image)::after {
+	height: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="number"],
+textarea {
+	background: #FFF;
+}
+
+/*
+ * Header
+ */
+
+.site-header {
+    padding: 0 4.5455% 0 4.5455%;
+    background: #FFF;
+    margin-bottom: 5.25em;
+  	border-bottom: 1px solid #ddd;
+}
+
+body.home .site-header {
+	margin-bottom: 0;
+}
+
+body.home .site-header.paged {
+	margin-bottom: 5.25em;
+}
+
+.site-title {
+	line-height: 1.5;
+}
+
+.site-title img {
+    border-radius: 50%;
+    margin-right: 12px;
+	width: 46px;
+}
+
+.site-description {
+    display: none;
+}
+
+.site {
+    margin: 0;
+}
+
+.site-inner {
+	max-width: 100%;
+}
+
+.navigation.post-navigation {
+    border: 0;
+}
+
+.menu-toggle.toggled-on:focus {
+    outline: thin dotted;
+    outline: none;
+}
+
+/*
+ * Featured Post
+ */
+
+.home-post {
+	line-height: 1;
+	text-align: center;
+	font-weight: 300;
+	color: #FFF;
+	margin: 0 0 5.25em 0;
+	padding: 0;
+	background: url(http://www.robertdevore.com/wp-content/uploads/2016/03/wpd-stock-photography-5.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+.home-post h1.entry-title {
+	font-size: 64px;
+	margin-bottom: 0;
+}
+
+.home-post a {
+	color: #FFF;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 140px;
+	background: rgba(0,0,0,0.7);
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+}
+
+.home-post a:hover {
+	color: #FFF;
+	background: rgba(0,0,0,0.3);
+}
+
+.home-post .entry-subtitle {
+	font-size: 24px;
+	text-shadow: 0 0 5px #000;
+}
+
+.home-post .fa {
+    font-size: 24px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    padding: 12px;
+}
+
+.home-post.paged {
+	display: none;
+}
+
+/*
+ * Content
+ */
+
+.entry-content {
+	font-size: 1.2rem;
+}
+
+.entry-subtitle {
+    font-weight: 400;
+    color: #999;
+}
+
+.entry-content ul,
+.entry-content ol {
+    margin-left: 24px;
+}
+
+figcaption.wp-caption-text {
+    text-align: center;
+}
+
+article.post .entry-footer {
+    background: #FFF;
+    border: 1px solid #ddd;
+    padding: 24px;
+}
+
+/*
+ * Sidebar
+ */
+
+.widget {
+    border: 0;
+    padding-top: 0;
+}
+
+.widget .widget-title {
+    text-align: center;
+}
+
+.tally-plugin-meta {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.textwidget span {
+    color: #999;
+    display: block;
+	font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*
+ * Footer
+ */
+
+#colophon {
+    background: #222;
+  	color: #777;
+    padding: 24px 5%;
+}
+
+.social-navigation a {
+    border-color: rgba(255,255,255,0.2);
+    color: #555;
+}
+
+.site-info {
+    color: #555;
+}
+
+.site-info a,
+.site-info a:visited {
+    color: #555;
+}
+
+.social-navigation li {
+    margin: 0 0.4375em 0 0;
+}
+
+@media screen and (max-width: 768px) {
+	.entry-header,
+	.post-thumbnail,
+	.entry-content,
+	.entry-summary,
+	.entry-footer,
+	.comments-area,
+	.image-navigation,
+	.post-navigation,
+	.page-header,
+	.page-content,
+	.content-bottom-widgets {
+		margin-right: 3.75em;
+	}
+
+	.home-post a {
+		padding: 100px 20px;
+	}
+	
+	.sidebar {
+		padding-right: 3.75em;
+	}
+	
+	.site-footer .main-navigation {
+		display: none;
+	}
+	
+	.home-post h1.entry-title {
+		font-size: 44px;
+		margin-bottom: 0;
+	}
+	
+	.site-header .main-navigation + .social-navigation {
+		display: none;
+	}
+	
+	.main-navigation .primary-menu {
+		border-bottom: 0;
+	}
+	
+	.site-header-menu.toggled-on {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 580px) {
+
+	.site-title img {
+		display: none;
+	}
+	
+	.entry-header,
+	.post-thumbnail,
+	.entry-content,
+	.entry-summary,
+	.entry-footer,
+	.comments-area,
+	.image-navigation,
+	.post-navigation,
+	.page-header,
+	.page-content,
+	.content-bottom-widgets {
+		margin-right: 1.75em;
+	}
+	
+	.sidebar {
+		padding-right: 1.75em;
+	}
+
+	.home-post a {
+		padding: 60px 20px;
+	}
+	
+	.home-post h1.entry-title {
+		font-size: 34px;
+		margin-bottom: 0;
+	}
+
+	.home-post .fa {
+		margin-top: 24px;
+	}
+}
