@@ -51,6 +51,10 @@ textarea {
 	background: #FFF;
 }
 
+body.page-template-page-builder .site-content {
+	padding: 0;
+}
+
 /*
  * Header
  */
@@ -62,7 +66,8 @@ textarea {
   	border-bottom: 1px solid #ddd;
 }
 
-body.home .site-header {
+body.home .site-header,
+body.page-template-page-builder .site-header {
 	margin-bottom: 0;
 }
 
