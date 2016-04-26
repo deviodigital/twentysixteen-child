@@ -6,7 +6,7 @@ function theme_enqueue_styles() {
         get_stylesheet_directory_uri() . '/style.css',
         array('parent-style')
     );
-    wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
+    wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' );
     wp_enqueue_style( 'merriweather', 'https://fonts.googleapis.com/css?family=Merriweather:400,700' );
     wp_enqueue_style( 'lato', 'https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' );
 }
